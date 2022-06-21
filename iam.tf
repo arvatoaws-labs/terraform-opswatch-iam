@@ -18,6 +18,7 @@ resource "aws_iam_role" "opswatch" {
 }
 
 resource "aws_iam_role_policy" "tags" {
+  name = "TagsPolicy"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -42,6 +43,7 @@ resource "aws_iam_role_policy" "tags" {
 }
 
 resource "aws_iam_role_policy" "describe" {
+  name = "DescribePolicy"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
