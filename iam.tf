@@ -38,7 +38,7 @@ resource "aws_iam_role_policy" "tags" {
       Resource = "*"
     }]
   })
-  role   = aws_iam_role.cloudwatch.id
+  role   = aws_iam_role.opswatch.id
 }
 
 resource "aws_iam_role_policy" "describe" {
@@ -65,5 +65,5 @@ resource "aws_iam_role_policy" "describe" {
       Resource = "*"
     }]
   })
-  role   = aws_iam_role.cloudwatch.id
+  role   = aws_iam_role.opswatch.id
 }
