@@ -62,7 +62,9 @@ resource "aws_iam_role_policy" "describe" {
         "ec2:DescribeInstanceTypes",
         "rds:DescribeDBClusters",
         "rds:DescribeDBClusterParameters",
-        "rds:DescribeDBParameters"
+        "rds:DescribeDBParameters",
+        "es:DescribeElasticsearchDomain",
+        "es:ListElasticsearchVersions"
       ]
       Resource = "*"
     }]
