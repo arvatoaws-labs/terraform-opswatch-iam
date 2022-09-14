@@ -71,7 +71,8 @@ resource "aws_iam_role_policy" "describe" {
         "elasticache:DescribeUpdateActions",
         "es:DescribeElasticsearchDomain",
         "es:ListElasticsearchVersions",
-        "rds:DescribeDBEngineVersions"
+        "rds:DescribeDBEngineVersions",
+        "lambda:GetFunctionConfiguration"
       ]
       Resource = "*"
     }]
