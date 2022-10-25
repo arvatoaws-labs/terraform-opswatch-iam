@@ -80,7 +80,7 @@ resource "aws_iam_role_policy" "describe" {
         "eks:ListNodegroups",
         "eks:DescribeNodegroup",
         "ssm:GetParameter",
-        "ssm:DescribeParamters",
+        "ssm:DescribeParameters",
         "ec2:DescribeImages"
       ]
       Resource = "*"
