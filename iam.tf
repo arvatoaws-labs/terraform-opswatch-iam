@@ -82,7 +82,10 @@ resource "aws_iam_role_policy" "describe" {
         "ssm:GetParameter",
         "ssm:DescribeParameters",
         "ec2:DescribeImages",
-        "ssm:DescribeInstancePatchStates"
+        "ssm:DescribeInstancePatchStates",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "mq:DescribeBrokerEngineTypes",
+        "mq:DescribeBroker"
       ]
       Resource = "*"
     }]
