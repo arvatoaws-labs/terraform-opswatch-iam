@@ -84,6 +84,8 @@ resource "aws_iam_role_policy" "describe" {
         "ec2:DescribeImages",
         "ssm:DescribeInstancePatchStates",
         "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTargetGroups",
+        "elasticloadbalancing:DescribeListeners",
         "mq:DescribeBrokerEngineTypes",
         "mq:DescribeBroker"
       ]
