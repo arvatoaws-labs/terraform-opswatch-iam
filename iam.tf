@@ -89,7 +89,8 @@ resource "aws_iam_role_policy" "describe" {
         "mq:DescribeBrokerEngineTypes",
         "mq:DescribeBroker",
         "ssm:DescribeInstanceInformation",
-        "backup:ListBackupJobs"
+        "backup:ListBackupJobs",
+        "backup:GetBackupPlan"
       ]
       Resource = "*"
     }]
