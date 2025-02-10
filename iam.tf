@@ -4,7 +4,7 @@ variable "opswatch_role_principal" {
 }
 
 resource "aws_iam_role" "opswatch" {
-  name = "OpsWatchRole"
+  name = "OpswatchRole"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
