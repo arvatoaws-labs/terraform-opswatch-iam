@@ -63,8 +63,6 @@ resource "aws_iam_role_policy" "describe" {
         "rds:DescribeDBClusters",
         "rds:DescribeDBClusterParameters",
         "rds:DescribeDBParameters",
-        "es:DescribeElasticsearchDomain",
-        "es:ListElasticsearchVersions",
         "elasticache:DescribeCacheClusters",
         "elasticache:DescribeCacheEngineVersions",
         "elasticache:DescribeReplicationGroups",
