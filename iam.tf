@@ -1,5 +1,5 @@
 variable "opswatch_role_principal" {
-  type = string
+  type        = string
   description = "Who is allowed to assume the role, so where is the OpsWatch instance running"
 }
 
@@ -22,14 +22,14 @@ resource "aws_iam_role_policy" "tags" {
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
-      Sid = "GenericTagApi"
+      Sid    = "GenericTagApi"
       Effect = "Allow"
       Action = [
         "tag:GetResources"
       ]
       Resource = "*"
-    }, {
-      Sid = "CustomTagApis"
+      }, {
+      Sid    = "CustomTagApis"
       Effect = "Allow"
       Action = [
         "cloudfront:ListTagsForResource",
@@ -39,7 +39,7 @@ resource "aws_iam_role_policy" "tags" {
       Resource = "*"
     }]
   })
-  role   = aws_iam_role.opswatch.id
+  role = aws_iam_role.opswatch.id
 }
 
 resource "aws_iam_role_policy" "describe" {
@@ -95,5 +95,5 @@ resource "aws_iam_role_policy" "describe" {
       Resource = "*"
     }]
   })
-  role   = aws_iam_role.opswatch.id
+  role = aws_iam_role.opswatch.id
 }
