@@ -84,6 +84,7 @@ resource "aws_iam_role_policy" "describe" {
         "elasticloadbalancing:DescribeLoadBalancers",
         "elasticloadbalancing:DescribeTargetGroups",
         "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeSSLPolicies",
         "mq:DescribeBrokerEngineTypes",
         "mq:DescribeBroker",
         "ssm:DescribeInstanceInformation",
