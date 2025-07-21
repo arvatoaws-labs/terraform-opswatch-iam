@@ -81,6 +81,7 @@ resource "aws_iam_role_policy" "describe" {
         "ssm:GetParameter",
         "ssm:DescribeParameters",
         "ec2:DescribeImages",
+        "ec2:DescribeSubnets",
         "ssm:DescribeInstancePatchStates",
         "elasticloadbalancing:DescribeLoadBalancers",
         "elasticloadbalancing:DescribeTargetGroups",
