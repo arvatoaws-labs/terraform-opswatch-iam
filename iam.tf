@@ -64,6 +64,7 @@ resource "aws_iam_role_policy" "describe" {
         "rds:DescribeDBClusterParameters",
         "rds:DescribeDBParameters",
         "rds:DescribeDBShardGroups",
+        "rds:DescribeServerlessV2PlatformVersions",
         "elasticache:DescribeCacheClusters",
         "elasticache:DescribeCacheEngineVersions",
         "elasticache:DescribeReplicationGroups",
