@@ -15,12 +15,7 @@ resource "aws_iam_role" "opswatch" {
     }]
   })
   tags = {
-    "Product ID"      = "prod-gis66v5zxadfk"
-    "Status"          = "Public"
-    "Delivery method" = "Professional Services"
-    "Product code"    = "8d3dhvaytz2l63mydmfgn9wkf"
-    "Last modified"   = "6. Nov. 2024"
-    "ARN"             = "arn:aws:aws-marketplace:us-east-1:773355297247:AWSMarketplace/ProfessionalServicesProduct/prod-gis66v5zxadfk"
+    "aws-apn-id" = "pc:8d3dhvaytz2l63mydmfgn9wkf"
   }
 }
 resource "aws_iam_role_policy" "tags" {
