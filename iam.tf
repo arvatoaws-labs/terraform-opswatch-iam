@@ -2,7 +2,6 @@ variable "opswatch_role_principal" {
   type        = string
   description = "Who is allowed to assume the role, so where is the OpsWatch instance running"
 }
-
 resource "aws_iam_role" "opswatch" {
   name = "OpswatchRole"
   assume_role_policy = jsonencode({
@@ -15,8 +14,15 @@ resource "aws_iam_role" "opswatch" {
       Action = "sts:AssumeRole"
     }]
   })
+  tags = {
+    "Product ID"      = "prod-gis66v5zxadfk"
+    "Status"          = "Public"
+    "Delivery method" = "Professional Services"
+    "Product code"    = "8d3dhvaytz2l63mydmfgn9wkf"
+    "Last modified"   = "6. Nov. 2024"
+    "ARN"             = "arn:aws:aws-marketplace:us-east-1:773355297247:AWSMarketplace/ProfessionalServicesProduct/prod-gis66v5zxadfk"
+  }
 }
-
 resource "aws_iam_role_policy" "tags" {
   name = "TagsPolicy"
   policy = jsonencode({
@@ -41,7 +47,6 @@ resource "aws_iam_role_policy" "tags" {
   })
   role = aws_iam_role.opswatch.id
 }
-
 resource "aws_iam_role_policy" "describe" {
   name = "DescribePolicy"
   policy = jsonencode({
